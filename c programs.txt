@@ -1,0 +1,131 @@
+
+
+program to find max between 2 number
+
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+
+    /* Input two numbers from user */
+    printf("Enter two numbers: ");
+    scanf("%d%d", &num1, &num2);
+
+    /* If num1 is maximum */
+    if(num1 > num2)
+    {
+        printf("%d is maximum", num1);        
+    }
+
+    /* If num2 is maximum */
+    if(num2 > num1)
+    {
+        printf("%d is maximum", num2);
+    }
+
+    /* Additional condition check for equality */
+    if(num1 == num2)
+    {
+        printf("Both are equal");
+    }
+
+    return 0;
+}
+ between 3 number
+
+
+#include <stdio.h>
+
+int main() {
+
+  double n1, n2, n3;
+
+  printf("Enter three different numbers: ");
+  scanf("%lf %lf %lf", &n1, &n2, &n3);
+
+  // if n1 is greater than both n2 and n3, n1 is the largest
+  if (n1 >= n2 && n1 >= n3)
+    printf("%.2f is the largest number.", n1);
+
+  // if n2 is greater than both n1 and n3, n2 is the largest
+  if (n2 >= n1 && n2 >= n3)
+    printf("%.2f is the largest number.", n2);
+
+  // if n3 is greater than both n1 and n2, n3 is the largest
+  if (n3 >= n1 && n3 >= n2)
+    printf("%.2f is the largest number.", n3);
+
+  return 0;
+}
+number for positive and negative and zero number
+
+#include <stdio.h>
+ 
+int main()
+{
+    int A;
+ 
+    printf("Enter the number A: ");
+    scanf("%d", &A);
+ 
+    if (A > 0)
+        printf("%d is positive.", A);
+    else if (A < 0)
+        printf("%d is negative.", A);
+    else if (A == 0)
+        printf("%d is zero.", A);
+ 
+    return 0;
+}
+
+ Check whether an integer is odd or even
+
+#include <stdio.h>
+int main() {
+    int number;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    // True if the remainder is 0
+    if  (number%2 == 0) {
+        printf("%d is an even integer.",number);
+    }
+    else {
+        printf("%d is an odd integer.",number);
+    }
+
+    return 0;
+}
+leap year or not
+#include <stdio.h>
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
+
+   // leap year if perfectly divisible by 400
+   if (year % 400 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // not a leap year if divisible by 100
+   // but not divisible by 400
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+   // leap year if not divisible by 100
+   // but divisible by 4
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // all other years are not leap years
+   else {
+      printf("%d is not a leap year.", year);
+   }
+
+   return 0;
+}
+
+
+
+
